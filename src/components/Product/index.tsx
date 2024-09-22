@@ -7,7 +7,7 @@ type Props = {
   category: string
   destaque: string
   description: string
-  infos: string
+  infos: string // Agora `infos` é apenas uma string
   image: string
 }
 
@@ -21,15 +21,13 @@ const Product = ({
 }: Props) => (
   <Card>
     <div className="container">
-      <Imagem src={image} alt="Hioki Sushi" />
+      <Imagem src={image} alt={title} />
       <div>
-        {infos.map((info) => (
-          <Tag key={info}>{info}</Tag>
-        ))}
+        <Tag>{infos}</Tag> {/* Renderização simples de `infos` como string */}
       </div>
       <Titulo>{title}</Titulo>
-      <Tag size="small">{destaque}</Tag>
-      <Tag size="small">{category}</Tag>
+      <Tag>{destaque}</Tag>
+      <Tag>{category}</Tag>
       <Descricao>{description}</Descricao>
     </div>
   </Card>
