@@ -12,7 +12,7 @@ export const Imagem = styled.img`
   margin-top: 80px;
 
   ${TagContainer} {
-    margin-right: 38px;
+    margin-right: 8px;
   }
 `
 export const Titulo = styled.h3`

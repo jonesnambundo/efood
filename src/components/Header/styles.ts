@@ -15,9 +15,11 @@ export const Logo = styled.img`
   margin-top: 40px;
 `
 export const Titulo = styled.h2`
-  text-align: center;
+  margin: auto;
+  max-width: 540px;
   font-size: 36px;
   font-weight: 900;
   line-height: 42px;
-  margin-top: 140px;
+  text-align: center;
+  margin-bottom: 40px;
 `

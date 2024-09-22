@@ -3,7 +3,7 @@ import { Imagem, Logo, Titulo } from './styles'
 import fundoImg from '../../assets/images/fundo.png'
 import logoImg from '../../assets/images/logo.png'
 
-const Banner = () => (
+const Header = () => (
   <Imagem style={{ backgroundImage: `url(${fundoImg})` }}>
     <Logo src={logoImg} alt="logo" />
     <Titulo>
@@ -13,4 +13,4 @@ const Banner = () => (
   </Imagem>
 )
 
-export default Banner
+export default Header

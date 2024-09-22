@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Banner from './components/Banner'
+import Banner from './components/Header'
 import Tag from './components/Tag'
 import { GlobalCss } from './styles'
 import ProductList from './components/ProductList'
