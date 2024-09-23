@@ -1,8 +1,17 @@
 import React from 'react'
 import Tag from '../Tag'
-import { Card, Descricao, Titulo, Imagem, Infos, Rating } from './styles'
+import {
+  Card,
+  Descricao,
+  Titulo,
+  Imagem,
+  Infos,
+  Rating,
+  SaibaMais,
+  TitleRatingWrapper
+} from './styles'
 import { ButtonLink } from '../Button/styles'
-import starImg from '../../assets/images/Star.png' // Importing star image correctly
+import starImg from '../../assets/images/Star.png'
 
 type Props = {
   title: string
@@ -18,7 +27,7 @@ const Product = ({
   description,
   infos,
   image,
-  link, // Aqui, estamos recebendo a prop 'link'
+  link,
   rating // Recebendo o rating
 }: Props) => (
   <Card>
@@ -28,15 +37,19 @@ const Product = ({
         <Tag key={info}>{info}</Tag>
       ))}
     </Infos>
-    <Titulo>{title}</Titulo>
-    <Rating>
-      {rating}
-      <img src={starImg} alt="Estrela" /> {/* Displaying star image */}
-    </Rating>
+    <TitleRatingWrapper>
+      <Titulo>{title}</Titulo>
+      <Rating>
+        {rating}
+        <img src={starImg} alt="Estrela" /> {/* Displaying star image */}
+      </Rating>
+    </TitleRatingWrapper>
     <Descricao>{description}</Descricao>
-    <ButtonLink type="link" to={link} title="Clique aqui">
-      Saiba mais
-    </ButtonLink>
+    <SaibaMais>
+      <ButtonLink type="link" to={link} title="Clique aqui">
+        Saiba mais
+      </ButtonLink>
+    </SaibaMais>
   </Card>
 )
 
