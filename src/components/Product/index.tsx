@@ -22,14 +22,7 @@ type Props = {
   rating: number
 }
 
-const Product = ({
-  title,
-  description,
-  infos,
-  image,
-  link,
-  rating // Recebendo o rating
-}: Props) => (
+const Product = ({ title, description, infos, image, link, rating }: Props) => (
   <Card>
     <Imagem src={image} alt={title} />
     <Infos>
