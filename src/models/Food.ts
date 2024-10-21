@@ -1,31 +1,31 @@
 class Food {
-  category: string
+  id: number
   description: string
   image: string
   infos: string[]
   rating: number
   title: string
   link: string
-  id: number
+  category?: string // Optional property
 
-  construtor(
+  constructor(
     id: number,
-    category: string,
     description: string,
     image: string,
     infos: string[],
     rating: number,
     title: string,
-    link: string
+    link: string,
+    category?: string
   ) {
     this.id = id
-    this.category = category
     this.image = image
     this.description = description
     this.infos = infos
     this.link = link
     this.rating = rating
     this.title = title
+    this.category = category
   }
 }
 
