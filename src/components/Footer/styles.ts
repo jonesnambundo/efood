@@ -12,25 +12,20 @@ export const Background = styled.footer`
     align-items: center;
   }
 `
-
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-`
-
 export const LogoFood = styled.img`
-  width: 150px;
+  width: 125px;
   height: auto;
+  margin-top: 40px;
+  margin-bottom: 32px;
 `
 
 export const SocialMedia = styled.div`
-  width: 88px;
+  width: 24px;
   height: 24px;
-  margin-top: 32px;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 80px;
+  gap: 8px;
 
   img {
     width: 24px;
@@ -45,10 +40,11 @@ export const SocialMedia = styled.div`
 `
 
 export const Description = styled.p`
-  width: 480px;
+  margin: auto;
+  max-width: 490px;
+  width: 100%;
   height: 24px;
   color: ${cores.vermelho};
-  margin-top: 80px;
   text-align: center;
   font-size: 10px;
   font-weight: 400;

@@ -3,8 +3,8 @@ import { cores } from '../../styles'
 
 export const Card = styled.div`
   background-color: ${cores.branca};
-  border: 1px solid ${cores.vermelho}; /* Borda vermelha */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  border: 1px solid ${cores.vermelho};
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 `
 
@@ -26,7 +26,7 @@ export const Titulo = styled.h3`
   font-size: 18px;
   font-weight: 700;
   color: ${cores.vermelho};
-  margin: 0; /* Remove margens extras */
+  margin: 0;
   margin-bottom: 16px;
 `
 
@@ -35,10 +35,10 @@ export const Rating = styled.div`
   color: ${cores.vermelho};
   font-weight: bold;
   display: flex;
-  align-items: center; /* Alinha o número e a estrela verticalmente */
+  align-items: center;
 
   img {
-    margin-left: 8px; /* Espaçamento entre o número e a estrela */
+    margin-left: 8px;
     width: 21px;
     height: 20px;
     margin-right: 8px;

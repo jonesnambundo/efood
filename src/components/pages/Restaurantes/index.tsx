@@ -76,7 +76,7 @@ const promocoes: Food[] = [
   }
 ]
 
-const Home = () => (
+const Restaurantes = () => (
   <>
     <Header />
     <ProductList title={''} foods={promocoes} />
@@ -84,4 +84,4 @@ const Home = () => (
   </>
 )
 
-export default Home
+export default Restaurantes

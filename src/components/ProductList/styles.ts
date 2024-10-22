@@ -8,6 +8,7 @@ export const Container = styled.section`
 
   ${Card} {
     border-radius: 1px solid ${cores.vermelho};
+    margin-bottom: 48px;
   }
 `
 export const List = styled.ul`

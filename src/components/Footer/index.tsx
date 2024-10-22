@@ -2,17 +2,11 @@ import logoImg from '../../assets/images/efoodlogo.png'
 import instagramLogo from '../../assets/images/instagram.png'
 import facebookLogo from '../../assets/images/facebook.png'
 import twitterLogo from '../../assets/images/twitter.png'
-import {
-  Background,
-  Description,
-  SocialMedia,
-  LogoFood,
-  Container
-} from './styles'
+import { Background, Description, SocialMedia, LogoFood } from './styles'
 
 const Footer = () => (
   <Background>
-    <Container>
+    <div className="container">
       <LogoFood src={logoImg} alt="Logo da Efood" />
       <SocialMedia>
         <img src={instagramLogo} alt="Logo do Instagram" />
@@ -24,7 +18,7 @@ const Footer = () => (
         responsabilidade pela entrega e qualidade dos produtos é toda do
         estabelecimento contratado.
       </Description>
-    </Container>
+    </div>
   </Background>
 )
 
