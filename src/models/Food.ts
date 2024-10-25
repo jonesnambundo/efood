@@ -6,7 +6,7 @@ class Food {
   rating: number
   title: string
   link: string
-  category?: string // Optional property
+  restaurantes?: string
 
   constructor(
     id: number,
@@ -16,7 +16,7 @@ class Food {
     rating: number,
     title: string,
     link: string,
-    category?: string
+    restaurantes?: string
   ) {
     this.id = id
     this.image = image
@@ -25,7 +25,7 @@ class Food {
     this.link = link
     this.rating = rating
     this.title = title
-    this.category = category
+    this.restaurantes = restaurantes
   }
 }
 

@@ -10,8 +10,8 @@ import {
   SaibaMais,
   TitleRatingWrapper
 } from './styles'
-import { ButtonLink } from '../Button/styles'
 import starImg from '../../assets/images/Star.png'
+import { Link } from 'react-router-dom'
 
 type Props = {
   title: string
@@ -22,7 +22,7 @@ type Props = {
   rating: number
 }
 
-const Product = ({ title, description, infos, image, link, rating }: Props) => (
+const Product = ({ title, description, infos, image, rating }: Props) => (
   <Card>
     <Imagem src={image} alt={title} />
     <Infos>
@@ -39,9 +39,9 @@ const Product = ({ title, description, infos, image, link, rating }: Props) => (
     </TitleRatingWrapper>
     <Descricao>{description}</Descricao>
     <SaibaMais>
-      <ButtonLink type="link" to={link} title="Clique aqui">
+      <Link type="link" to="/restaurantes">
         Saiba mais
-      </ButtonLink>
+      </Link>
     </SaibaMais>
   </Card>
 )
