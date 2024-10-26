@@ -5,55 +5,53 @@ export const PageContainer = styled.div`
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-  padding: 40px 0;
 `
-
 export const FoodContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 32px;
-  justify-items: center;
   width: 100%;
+  margin-top: 80px;
+  margin-bottom: 120px;
 `
-
 export const FoodCard = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 8px;
   background-color: ${cores.vermelho};
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 320px;
   height: 338px;
-  text-align: start;
+  padding: 8px;
 
   h3 {
-    margin: 16px 0 8px;
-    font-size: 16px;
-    font-weight: bold;
+    width: 124px;
+    height: 19px;
     color: ${cores.chantili};
-    text-align: start;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 
   p {
-    font-size: 14px;
+    width: 304px;
+    height: 88px;
     color: ${cores.chantili};
-    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 8px;
   }
 `
-
 export const FoodImage = styled.img`
-  width: 100%;
   max-width: 304px;
   height: 167px;
 `
-
 export const AddButton = styled.button`
-  width: calc(100% - 16px); /* Subtrai 8px de margem para cada lado */
-  margin: 0 8px;
+  width: 100%;
   height: 24px;
-  width: 304px;
+  max-width: 304px;
   background-color: ${cores.chantili};
   color: ${cores.vermelho};
   border: none;
@@ -61,6 +59,7 @@ export const AddButton = styled.button`
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.3s;
+  padding: 4px;
 
   &:hover {
     background-color: #e55337;

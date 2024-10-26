@@ -22,7 +22,7 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     width: 100%;
     max-width: 1024px; /* Alinhado ao máximo do GlobalCss */
-    height: 186px;
+    height: 180px;
     text-align: center;
     padding: 40px 0;
   }

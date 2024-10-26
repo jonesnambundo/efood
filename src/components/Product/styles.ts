@@ -17,7 +17,7 @@ export const Imagem = styled.img`
 export const TitleRatingWrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Alinha o título e a classificação nas extremidades */
+  justify-content: space-between;
   margin-top: 8px;
   margin-left: 8px;
 `
@@ -65,7 +65,7 @@ export const Infos = styled.div`
 
 export const SaibaMais = styled.div`
   margin-left: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   a {
     background-color: ${cores.vermelho};
     color: ${cores.branca};
