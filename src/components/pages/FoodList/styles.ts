@@ -60,9 +60,4 @@ export const AddButton = styled.button`
   font-size: 14px;
   transition: background-color 0.3s;
   padding: 4px;
-
-  &:hover {
-    background-color: #e55337;
-    opacity: 95%;
-  }
 `
