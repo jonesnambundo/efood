@@ -10,6 +10,8 @@ export const Background = styled.footer`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 `
 export const LogoFood = styled.img`
@@ -23,7 +25,7 @@ export const SocialMedia = styled.div`
   display: flex;
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Alinha verticalmente */
-  gap: 16px; /* Adiciona espaço consistente entre os ícones */
+  gap: 16px;
   margin-bottom: 80px;
 
   img {

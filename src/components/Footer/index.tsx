@@ -3,11 +3,14 @@ import instagramLogo from '../../assets/images/instagram.png'
 import facebookLogo from '../../assets/images/facebook.png'
 import twitterLogo from '../../assets/images/twitter.png'
 import { Background, Description, SocialMedia, LogoFood } from './styles'
+import { Link } from 'react-router-dom'
 
 const Footer = () => (
   <Background>
     <div className="container">
-      <LogoFood src={logoImg} alt="Logo da Efood" />
+      <Link to="/">
+        <LogoFood src={logoImg} alt="Logo da Efood" />
+      </Link>
       <SocialMedia>
         <img src={instagramLogo} alt="Logo do Instagram" />
         <img src={facebookLogo} alt="Logo do Facebook" />
