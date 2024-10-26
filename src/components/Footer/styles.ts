@@ -20,12 +20,11 @@ export const LogoFood = styled.img`
 `
 
 export const SocialMedia = styled.div`
-  width: 24px;
-  height: 24px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  gap: 16px; /* Adiciona espaço consistente entre os ícones */
   margin-bottom: 80px;
-  gap: 8px;
 
   img {
     width: 24px;
@@ -38,7 +37,6 @@ export const SocialMedia = styled.div`
     }
   }
 `
-
 export const Description = styled.p`
   margin: auto;
   max-width: 490px;
